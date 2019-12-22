@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColorScreenDefault"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/game_container"
+    tools:context=".game.GameActivity">
+
+    <LinearLayout
+        android:id="@+id/game_status_container"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/my_trophies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/your_trophy_1"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:minWidth="30dp"
+                android:minHeight="30dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/icons8_trophy_cup_64_off"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/your_trophy_2"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:minWidth="30dp"
+                android:minHeight="30dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/icons8_trophy_cup_64_off"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/your_trophy_3"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:minWidth="30dp"
+                android:minHeight="30dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/icons8_trophy_cup_64_off"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/game_status"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="3dp"
+            android:columnCount="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/your_nr"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:text="@string/default_status_name_you"
+                android:textColor="@color/colorYours"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/versus" />
+
+            <TextView
+                android:id="@+id/player_nr"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/default_status_name_player"
+                android:textColor="@color/colorPlayers"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/my_face_up_count"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/default_status_count_16"
+                android:textColor="@color/colorYours"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/versus" />
+
+            <TextView
+                android:id="@+id/opponent_face_up_count"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/default_status_count_16"
+                android:textColor="@color/colorPlayers"
+                android:textStyle="bold" />
+        </GridLayout>
+
+
+        <LinearLayout
+            android:id="@+id/opponent_trophies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/player_trophy_1"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:minWidth="30dp"
+                android:minHeight="30dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/icons8_trophy_cup_64_off"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/player_trophy_2"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:minWidth="30dp"
+                android:minHeight="30dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/icons8_trophy_cup_64_off"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/player_trophy_3"
+                android:maxWidth="40dp"
+                android:maxHeight="40dp"
+                android:minWidth="30dp"
+                android:minHeight="30dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/icons8_trophy_cup_64_off"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_main_actions_container"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal|fill_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/game_faces_grid_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_status_container">
+
+        <include
+            android:id="@+id/selected_character"
+            layout="@layout/face_tile_card" />
+
+        <Space
+            android:id="@+id/actions_space"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:layout_gravity="fill_vertical" />
+
+        <Button
+            android:id="@+id/quit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="88dip"
+            android:minWidth="85dip"
+            android:onClick="onQuitClick"
+            android:text="@string/quit_button" />
+
+        <Button
+            android:id="@+id/guess_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="88dip"
+            android:minWidth="85dip"
+            android:onClick="onGuessClick"
+            android:text="@string/guess_button" />
+
+        <Button
+            android:id="@+id/pass_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="88dip"
+            android:minWidth="85dip"
+            android:onClick="onPassClick"
+            android:text="@string/pass_button" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/game_faces_grid_container"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:columnCount="4"
+        android:gravity="fill_horizontal|fill_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_status_container">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/face_grid_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_columnSpan="1"
+            android:scrollbars="none" />
+    </GridLayout>
+
+    <!-- Switch between two layouts: home buttons & search friend form -->
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal|fill_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_faces_grid_container"
+        app:layout_constraintVertical_bias="0.88">
+
+        <TextView
+            android:id="@+id/select_character_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:text="@string/select_a_character"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/waiting_for_opponent_action_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:text="@string/waiting_for_opponent_action"
+            android:textSize="36sp" />
+
+        <GridLayout
+            android:id="@+id/game_question_buttons_container_disabled"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:columnCount="4"
+            android:gravity="center_horizontal|fill_vertical"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/question_grid_recycler_view_disabled"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" />
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/game_question_buttons_container"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:columnCount="4"
+            android:gravity="center_horizontal|fill_vertical"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/question_grid_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" />
+        </GridLayout>
+    </ViewFlipper>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

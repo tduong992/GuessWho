@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1011737887354",
+    "firebase_url": "https://moba1-guess-who.firebaseio.com",
+    "project_id": "moba1-guess-who",
+    "storage_bucket": "moba1-guess-who.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011737887354:android:a3fe063f2fee478e9631c3",
+        "android_client_info": {
+          "package_name": "ch.zhaw.moba1.guesswho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011737887354-ldbv4q4ac224v2mij0uuga029mlb1uk3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ch.zhaw.moba1.guesswho",
+            "certificate_hash": "37cbbe53ef13a51334ea02b08307abbb53bfe0bd"
+          }
+        },
+        {
+          "client_id": "1011737887354-o5rfhfdu02kf1dtiam1vb3t7520umtkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqb0UE70OsWrusYX_ITotTueUkN5Y6Im0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011737887354-o5rfhfdu02kf1dtiam1vb3t7520umtkp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Guess Who?</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_play">Play</string>
+    <string name="label_your_nr">Your ID: </string>
+    <string name="action_search_friend">Search friend</string>
+    <string name="action_achievements">Achievements</string>
+    <string name="action_back">Back</string>
+    <string name="action_search_friend_label">Enter your friend\'s ID here</string>
+    <string name="action_search_friend_placeholder">Type your friend\'s ID here</string>
+    <string name="your_trophy_1">your trophy 1</string>
+    <string name="your_trophy_2">your trophy 2</string>
+    <string name="your_trophy_3">your trophy 3</string>
+    <string name="player_trophy_1">player trophy 1</string>
+    <string name="player_trophy_2">player trophy 2</string>
+    <string name="player_trophy_3">player trophy 3</string>
+    <string name="versus">x</string>
+    <string name="default_status_name_you">You</string>
+    <string name="default_status_name_player">Player</string>
+    <string name="default_status_count_16">16</string>
+    <string name="quit_button">QUIT</string>
+    <string name="guess_button">GUESS</string>
+    <string name="pass_button">PASS</string>
+    <string name="select_a_character">Select a character</string>
+    <string name="waiting_for_opponent_action">Waiting for opponent action</string>
+    <string name="answer_yes">YES</string>
+    <string name="answer_no">NO</string>
+    <string name="answer_icon">Answer icon</string>
+</resources>

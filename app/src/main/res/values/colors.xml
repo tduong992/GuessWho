@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bgColorScreenDefault">#928EE6DB</color>
+    <color name="colorTitleShadow">#011818</color>
+    <color name="colorText">#010E0E</color>
+    <color name="colorTextPrimary">#DAEEEE</color>
+    <color name="bgColorButton">#3E9691</color>
+    <color name="bgColorButtonDisabled">#66383D3B</color>
+    <color name="bgColorButtonSecondary">#DCF1ED</color>
+    <color name="colorYours">#2196F3</color>
+    <color name="colorPlayers">#FF9800</color>
+    <color name="bgColorMask">#B3011818</color>
+</resources>
